@@ -1,0 +1,52 @@
+{
+  "name": "cias-ui",
+  "version": "0.1.0",
+  "files": [
+    "lib"
+  ],
+  "main": "./lib/cias-ui.umd.js",
+  "module": "./lib/cias-ui.es.js",
+  "exports": {
+    ".": {
+      "import": "./lib/cias-ui.es.js",
+      "require": "./lib/cias-ui.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "node ./scripts/build.js",
+    "serve": "vite preview",
+    "pkg:add": "node ./scripts/pkg-add.js",
+    "gen:entry": "node ./scripts/gen-entry.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.5",
+    "@rollup/plugin-json": "^4.1.0",
+    "@vue/compiler-sfc": "^3.2.11",
+    "chalk": "^4.1.2",
+    "change-case": "^4.1.2",
+    "execa": "^5.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "inquirer": "^8.1.2",
+    "json-templater": "^1.2.0",
+    "listr": "^0.14.3",
+    "minimist": "^1.2.5",
+    "rollup": "^2.56.3",
+    "sass": "^1.39.2",
+    "vite": "^2.5.4",
+    "vite-plugin-vue2": "^1.8.2",
+    "vue": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "vuepress": "^1.8.2"
+  },
+  "peerDependencies": {
+    "element-ui": "^2.15.6",
+    "vue": "^2.6.14"
+  }
+}
