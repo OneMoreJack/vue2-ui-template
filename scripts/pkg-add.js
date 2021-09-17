@@ -104,7 +104,7 @@ async function createPkg(componentInfo) {
           'package', 
           'doc', 
           '--name', 
-          ctx.componentName,
+          ctx.componentname,
           '--chName',
           ctx.chineseName,
           '--type',
@@ -114,7 +114,7 @@ async function createPkg(componentInfo) {
     },
     {
       title: '更新入口文件',
-      task: execa('yarn', ['gen:entry']),
+      task: () => execa('yarn', ['gen:entry']),
     },
   ])
 
