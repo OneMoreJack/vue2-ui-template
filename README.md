@@ -8,7 +8,13 @@
 
 
 ## 添加组件
-```sh
+项目使用 `hygen` 生成或更新部分文件，需全局安装 `hygen` 才能正常使用 `yarn pkg:add` 命令：
+```shell
+    npm i -g hygen
+```
+
+创建一个新组件：
+```shell
   # 中文名可选
   yarn pkg:add component-name [组件中文名]
 
@@ -22,7 +28,7 @@
 ```
 
 你还可以通过 `--basic`, `--business` 指定组件类型是基础组件还是业务组件：
-```sh
+```shell
   yarn pkg:add table 表格 --basic
   # 该命令将创建基础组件 table
 ```
