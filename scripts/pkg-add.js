@@ -52,7 +52,6 @@ async function addPkg() {
 addPkg()
   .catch(async err => {
     console.log(chalk.bgRed(err))
-    await execa('git', ['restore', '.'])
     process.exit(1)
   })
 
