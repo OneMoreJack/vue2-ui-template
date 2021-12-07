@@ -1,5 +1,4 @@
-# cias-ui
->中保车服公共组件库(PC)
+# vue2-ui-template
 
 ## 构建
 ```sh
